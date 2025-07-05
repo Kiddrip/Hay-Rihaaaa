@@ -1,0 +1,27 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cute Game Zone</title>
+    <link rel="stylesheet" href="style.css">
+    <audio id="clickSound" src="https://cdn.pixabay.com/download/audio/2022/03/15/audio_99c26d7380.mp3?filename=ui-click-111104.mp3"></audio>
+</head>
+<body>
+    <div class="container">
+        <h1>Built with 80% nonsense, 10% vibes, 10% games... math is not our thing 💁‍♂️</h1>
+        <p>Welcome to the most unserious game zone you’ve ever clicked on.</p>
+        <p>Tap below. Break some scores. Judge me later.</p>
+        <button onclick="playSoundAndGo()">🎮 Enter Game Zone</button>
+    </div>
+
+    <script>
+        function playSoundAndGo() {
+            document.getElementById('clickSound').play();
+            setTimeout(() => {
+                window.location.href = "games.html";
+            }, 400);
+        }
+    </script>
+</body>
+</html>
